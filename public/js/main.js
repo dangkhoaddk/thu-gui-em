@@ -2,7 +2,7 @@
 import { CONFIG } from './config.js';
 import { $ } from './utils.js';
 import { initEnvelope } from './envelope.js';
-import { initHero, startHeroVideo } from './hero.js';
+import { initHero, startHeroSlides, prepareHeroSlides } from './hero.js';
 import { initUniverse } from './universe.js';
 import { initGallery, openGallery } from './gallery.js';
 import { initJourney } from './journey.js';
@@ -30,10 +30,10 @@ async function loadCategories() {
 const main = $('#main');
 initHero(CONFIG);
 initEnvelope(CONFIG, {
-  onSealOpen: startHeroVideo,
-  onRevealStart: () => document.documentElement.classList.add('hero-go'),
+  onSealOpen: prepareHeroSlides,
+  onRevealStart: () => { document.documentElement.classList.add('hero-go'); startHeroSlides(); },
   onOpened: () => {
-    startHeroVideo();
+    startHeroSlides();
     document.documentElement.classList.add('hero-go');
     main.inert = false;
     $('#hero-title').focus({ preventScroll: true });
@@ -42,5 +42,5 @@ initEnvelope(CONFIG, {
 
 const cats = await loadCategories();
 initGallery(cats);
-initUniverse(cats, { openGallery });
+initUniverse(cats, { openGallery, filmTitle: CONFIG.filmTitle });
 initJourney(CONFIG, cats);

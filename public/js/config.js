@@ -5,6 +5,20 @@ export const CONFIG = {
   metDate: "2023-10-20T00:00",      // bộ đếm ngày·giờ·phút tính từ đây
   weddingDate: "[2024-10-30]",
   letterLine: "Cảm ơn em, vì đã chọn anh.",
+  // Ảnh nền Hero (trình chiếu, mỗi ảnh ~5s). Nên dùng ảnh NGANG, cạnh dài ≥ 1600px.
+  heroSlides: [
+    "/images/anh-cuoi/01.jpg",
+    "/images/hen-ho/06.jpg",
+    "/images/hen-ho/10.jpg",
+    "/images/hue-hoi-an/02.jpg",
+    "/images/thai-lan/15.jpg",
+    "/images/hen-ho/11.jpg",
+    "/images/anh-cuoi/04.jpg",
+    "/images/anh-cuoi/05.jpg",
+    "/images/anh-cuoi/06.jpg"
+  ],
+  slideSeconds: 5,
+  filmTitle: "Lời hứa của anh !",   // tiêu đề video tròn + trình phát phim
   hero: { script: "Cảm ơn em", title: "vì đã là vợ của anh",
           message: "Cảm ơn em đã kiên nhẫn với anh qua những ngày vụng về nhất, và cùng anh biến một căn nhà thành tổ ấm. Anh chúc em luôn bình an, luôn được cười thật nhiều — và anh hứa sẽ là lý do cho những nụ cười ấy." },
   categories: [   // thứ tự = thứ tự thời gian, dùng cho vòng tròn, dải mobile và gallery

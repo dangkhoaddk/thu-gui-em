@@ -1,12 +1,13 @@
 // 3. Những miền ký ức — vòng tròn desktop + dải vuốt mobile + modal phim cưới.
-import { $, $$, esc, toneFor, imgOrPh, lazyVideo, lockScroll, unlockScroll, trapFocus, fadeOut, ICON } from './utils.js';
+import { $, $$, esc, toneFor, imgOrPh, lazyVideo, ICON } from './utils.js';
+import { openPlayer } from './player.js';
 
 const VIDEO = 'video/wedding.mp4';
 const POSTER = 'video/wedding-poster.jpg';
 const CX = 720, CY = 540, R = 290, R2 = 446;
 const rad = (d) => d * Math.PI / 180;
 
-export function initUniverse(cats, { openGallery }) {
+export function initUniverse(cats, { openGallery, filmTitle = 'Lời hứa của anh !' }) {
   const section = $('#universe');
   const N = cats.length;
 
@@ -28,7 +29,7 @@ export function initUniverse(cats, { openGallery }) {
     };
   });
 
-  const filmFace = (label) => `<span class="film-face">${ICON.play}<span>${label}</span></span>`;
+  const filmFace = () => `<span class="film-face"><span class="film-play">${ICON.play}</span><span class="film-title">${esc(filmTitle)}</span><span class="film-sub">Xem phim cưới</span></span>`;
 
   // ---------- Desktop ----------
   const desk = $('.uni-desk', section);
@@ -37,9 +38,9 @@ export function initUniverse(cats, { openGallery }) {
       <div class="uni-head"><span class="rule" aria-hidden="true"></span><h2 id="uni-title">Những miền ký ức</h2><span class="rule" aria-hidden="true"></span></div>
       <div class="uni-ring" aria-hidden="true"></div>
       <svg class="uni-threads" aria-hidden="true" width="1440" height="1080" viewBox="0 0 1440 1080"></svg>
-      <button type="button" class="film-btn" aria-label="Xem phim cưới">
+      <button type="button" class="film-btn" aria-label="Xem phim: ${esc(filmTitle)}">
         <video muted loop playsinline preload="none" poster="${POSTER}" aria-hidden="true" tabindex="-1"></video>
-        ${filmFace('Phim cưới')}
+        ${filmFace()}
       </button>
       <div class="uni-cap" aria-live="polite"></div>
       ${cats.map((c, i) => `
@@ -102,11 +103,11 @@ export function initUniverse(cats, { openGallery }) {
   mob.innerHTML = `
     <div class="uni-mhead"><span class="rule" aria-hidden="true"></span><h2>Những miền ký ức</h2><span class="rule" aria-hidden="true"></span></div>
     <div class="uni-mfilm">
-      <button type="button" class="film-btn" aria-label="Xem phim cưới">
+      <button type="button" class="film-btn" aria-label="Xem phim: ${esc(filmTitle)}">
         <video muted loop playsinline preload="none" poster="${POSTER}" aria-hidden="true" tabindex="-1"></video>
-        ${filmFace('Phim cưới')}
+        ${filmFace()}
       </button>
-      <p>Chạm để xem phim cưới</p>
+      <p>Chạm để xem lời hứa của anh</p>
     </div>
     <div class="uni-mrow"><p class="uni-mcount">${N} miền ký ức</p><p class="uni-mswipe">Vuốt ngang ${ICON.arrowRight}</p></div>
     <div class="strip" data-scrollable>
@@ -147,42 +148,6 @@ export function initUniverse(cats, { openGallery }) {
     const v = $('video', btn);
     lazyVideo(v, VIDEO, () => btn.classList.remove('has-video'));
     v.addEventListener('playing', () => btn.classList.add('has-video'));
-    btn.addEventListener('click', () => openFilm(btn));
+    btn.addEventListener('click', () => openPlayer({ src: VIDEO, poster: POSTER, title: filmTitle, trigger: btn }));
   });
 }
-
-// ---------- Modal phim cưới (có tiếng + controls) ----------
-let releaseFilm = null;
-function openFilm(trigger) {
-  const film = $('#film');
-  film.innerHTML = `
-    <button type="button" class="round film-close" aria-label="Đóng phim cưới">${ICON.close}</button>
-    <video controls playsinline preload="metadata" poster="${POSTER}" src="${VIDEO}"></video>`;
-  film.hidden = false;
-  film.classList.add('fade-in');
-  lockScroll();
-  const video = $('video', film);
-  video.play().catch(() => {});
-  const release = trapFocus(film);
-  $('.film-close', film).focus();
-
-  const close = () => {
-    video.pause();
-    removeEventListener('keydown', onKey);
-    release();
-    fadeOut(film, () => {
-      film.hidden = true;
-      video.removeAttribute('src'); video.load();
-      film.innerHTML = '';
-      unlockScroll();
-      trigger.focus({ preventScroll: true });
-    });
-    releaseFilm = null;
-  };
-  const onKey = (e) => { if (e.key === 'Escape') close(); };
-  addEventListener('keydown', onKey);
-  $('.film-close', film).addEventListener('click', close);
-  film.onclick = (e) => { if (e.target === film) close(); };
-  releaseFilm = close;
-}
-export const closeFilm = () => releaseFilm && releaseFilm();
