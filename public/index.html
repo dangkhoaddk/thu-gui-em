@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Gửi Em</title>
+  <meta name="description" content="Một lá thư nhỏ anh gửi em — cảm ơn em vì đã là vợ của anh.">
+  <meta name="theme-color" content="#330711">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 21s-8-5-8-11.2A4.6 4.6 0 0 1 12 6.8a4.6 4.6 0 0 1 8 3c0 6.2-8 11.2-8 11.2z' fill='%236B1529'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Dancing+Script:wght@500;600&display=swap&subset=vietnamese">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Dancing+Script:wght@500;600&display=swap&subset=vietnamese" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Dancing+Script:wght@500;600&display=swap&subset=vietnamese"></noscript>
+  <!-- preload:start -->
+  <link rel="preload" as="image" href="/video/wedding-poster.jpg" fetchpriority="high">
+  <link rel="preload" as="image" href="/images/hen-ho/thumbs/01.jpg" fetchpriority="low">
+  <link rel="preload" as="image" href="/images/hue-hoi-an/thumbs/01.jpg" fetchpriority="low">
+  <link rel="preload" as="image" href="/images/ninh-binh/thumbs/01.jpg" fetchpriority="low">
+  <link rel="preload" as="image" href="/images/thai-lan/thumbs/01.jpg" fetchpriority="low">
+  <link rel="preload" as="image" href="/images/anh-cuoi/thumbs/01.jpg" fetchpriority="low">
+  <!-- preload:end -->
+  <link rel="modulepreload" href="js/main.js">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>document.documentElement.classList.add('is-locked');</script>
+  <noscript><style>.env-overlay{display:none}html.is-locked,html.is-locked body{overflow:auto}.hero .rise,.tile,.j-stop{opacity:1}</style></noscript>
+  <script type="module" src="js/main.js"></script>
+</head>
+<body>
+
+  <!-- 1. Phong thư -->
+  <div id="envelope" class="env-overlay" role="dialog" aria-modal="true" aria-label="Phong thư gửi em">
+    <div class="env-dust" aria-hidden="true"></div>
+    <div class="env-stage">
+      <div class="env-title"><p><span class="type">Có một lá thư gửi đến em…</span></p></div>
+      <div class="env-wrap">
+        <div class="env-in">
+          <div class="env-body">
+            <div class="env-back" aria-hidden="true"></div>
+            <div class="env-letter" inert>
+              <div class="env-letter-frame" aria-hidden="true"></div>
+              <p data-letter>Cảm ơn em, vì đã chọn anh.</p>
+              <button type="button" class="env-reveal">Mở ra ♡</button>
+            </div>
+            <div class="env-front" aria-hidden="true"></div>
+            <div class="env-front-2" aria-hidden="true"></div>
+            <div class="env-line" aria-hidden="true"></div>
+            <div class="env-flap" aria-hidden="true"></div>
+            <button type="button" class="seal" aria-label="Mở phong thư">
+              <span class="seal-ring" aria-hidden="true"></span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="#F2D4D2" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <p class="env-hint">Chạm vào con dấu để mở</p>
+      <div class="hearts" aria-hidden="true"></div>
+    </div>
+  </div>
+
+  <main id="main" inert>
+    <!-- 2. Hero -->
+    <section id="hero" class="hero on-dark" aria-labelledby="hero-title">
+      <div class="hero-media ph-hero">
+        <video muted loop playsinline preload="none" poster="video/wedding-poster.jpg" data-src="video/wedding.mp4" aria-hidden="true" tabindex="-1"></video>
+      </div>
+      <div class="hero-shade hero-shade-1" aria-hidden="true"></div>
+      <div class="hero-shade hero-shade-2" aria-hidden="true"></div>
+      <div class="hero-shade hero-shade-m" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <p class="hero-script rise" data-hero="script">Cảm ơn em</p>
+        <h1 id="hero-title" class="hero-title rise" tabindex="-1" data-hero="title">vì đã là vợ của anh</h1>
+        <div class="hero-rule rise" aria-hidden="true"></div>
+        <p class="hero-msg rise" data-hero="message">Cảm ơn em đã kiên nhẫn với anh qua những ngày vụng về nhất, và cùng anh biến một căn nhà thành tổ ấm. Anh chúc em luôn bình an, luôn được cười thật nhiều — và anh hứa sẽ là lý do cho những nụ cười ấy.</p>
+        <p class="hero-label rise">Chúng mình đã bên nhau</p>
+        <p class="counter rise" aria-live="off">
+          <span class="cell"><span class="num" data-count="days">0</span><span class="unit">ngày</span></span>
+          <span class="dot" aria-hidden="true">·</span>
+          <span class="cell"><span class="num" data-count="hours">0</span><span class="unit">giờ</span></span>
+          <span class="dot" aria-hidden="true">·</span>
+          <span class="cell"><span class="num" data-count="minutes">0</span><span class="unit">phút</span></span>
+        </p>
+      </div>
+
+      <svg class="hero-arc" aria-hidden="true" viewBox="0 0 1440 96" preserveAspectRatio="none">
+        <path d="M0 96 L0 56 Q720 -24 1440 56 L1440 96 Z" fill="#FBF6EE"/>
+        <path d="M0 56 Q720 -24 1440 56" fill="none" stroke="#C9A96E" stroke-width="1.2" vector-effect="non-scaling-stroke"/>
+        <path d="M0 64 Q720 -16 1440 64" fill="none" stroke="#C9A96E" stroke-opacity=".35" stroke-width="1" vector-effect="non-scaling-stroke"/>
+      </svg>
+      <svg class="hero-arc hero-arc-m" aria-hidden="true" viewBox="0 0 390 64" preserveAspectRatio="none">
+        <path d="M0 64 L0 40 Q195 -12 390 40 L390 64 Z" fill="#FBF6EE"/>
+        <path d="M0 40 Q195 -12 390 40" fill="none" stroke="#C9A96E" stroke-width="1.2" vector-effect="non-scaling-stroke"/>
+        <path d="M0 47 Q195 -5 390 47" fill="none" stroke="#C9A96E" stroke-opacity=".35" stroke-width="1" vector-effect="non-scaling-stroke"/>
+      </svg>
+      <button type="button" class="scroll-btn" aria-label="Cuộn xuống phần Những miền ký ức">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v13M6.5 12.5 12 18l5.5-5.5"/></svg>
+      </button>
+    </section>
+
+    <!-- 3. Những miền ký ức -->
+    <section id="universe" class="uni paper" aria-labelledby="uni-title">
+      <div class="uni-desk"></div>
+      <div class="uni-mob"></div>
+    </section>
+
+    <!-- 4. Hành trình & lời kết -->
+    <section id="journey" class="journey paper" aria-labelledby="journey-title"></section>
+  </main>
+
+  <div id="gallery" class="gallery paper" role="dialog" aria-modal="true" aria-labelledby="g-title" data-scrollable hidden></div>
+  <div id="lightbox" class="lb on-dark" role="dialog" aria-modal="true" aria-label="Xem ảnh lớn" hidden></div>
+  <div id="film" class="film on-dark" role="dialog" aria-modal="true" aria-label="Phim cưới" hidden></div>
+</body>
+</html>

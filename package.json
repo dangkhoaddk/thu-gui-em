@@ -1,0 +1,13 @@
+{
+  "name": "thu-gui-em",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Gửi Em — website tĩnh tặng vợ",
+  "scripts": {
+    "build": "node scripts/build-manifest.mjs",
+    "optimize": "node scripts/optimize-images.mjs",
+    "start": "npm run build && npx --yes serve public -l 3000"
+  },
+  "engines": { "node": ">=18" }
+}
