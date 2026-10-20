@@ -14,7 +14,20 @@
       "/images/hen-ho/08.jpg",
       "/images/hen-ho/09.jpg",
       "/images/hen-ho/10.jpg",
-      "/images/hen-ho/11.jpg"
+      "/images/hen-ho/11.jpg",
+      "/images/hen-ho/12.jpg",
+      "/images/hen-ho/13.jpg",
+      "/images/hen-ho/14.jpg",
+      "/images/hen-ho/15.jpg",
+      "/images/hen-ho/16.jpg",
+      "/images/hen-ho/17.jpg",
+      "/images/hen-ho/18.jpg",
+      "/images/hen-ho/19.jpg",
+      "/images/hen-ho/20.jpg",
+      "/images/hen-ho/21.jpg",
+      "/images/hen-ho/22.jpg",
+      "/images/hen-ho/23.jpg",
+      "/images/hen-ho/24.jpg"
     ],
     "dims": [
       [
@@ -60,6 +73,58 @@
       [
         2000,
         1822
+      ],
+      [
+        828,
+        1472
+      ],
+      [
+        1500,
+        2000
+      ],
+      [
+        2000,
+        1500
+      ],
+      [
+        2000,
+        1500
+      ],
+      [
+        1500,
+        2000
+      ],
+      [
+        1500,
+        2000
+      ],
+      [
+        1500,
+        2000
+      ],
+      [
+        1500,
+        2000
+      ],
+      [
+        1500,
+        2000
+      ],
+      [
+        1500,
+        2000
+      ],
+      [
+        1500,
+        2000
+      ],
+      [
+        1500,
+        2000
+      ],
+      [
+        1500,
+        2000
       ]
     ],
     "thumbs": [
@@ -73,7 +138,20 @@
       "/images/hen-ho/thumbs/08.jpg",
       "/images/hen-ho/thumbs/09.jpg",
       "/images/hen-ho/thumbs/10.jpg",
-      "/images/hen-ho/thumbs/11.jpg"
+      "/images/hen-ho/thumbs/11.jpg",
+      "/images/hen-ho/thumbs/12.jpg",
+      "/images/hen-ho/thumbs/13.jpg",
+      "/images/hen-ho/thumbs/14.jpg",
+      "/images/hen-ho/thumbs/15.jpg",
+      "/images/hen-ho/thumbs/16.jpg",
+      "/images/hen-ho/thumbs/17.jpg",
+      "/images/hen-ho/thumbs/18.jpg",
+      "/images/hen-ho/thumbs/19.jpg",
+      "/images/hen-ho/thumbs/20.jpg",
+      "/images/hen-ho/thumbs/21.jpg",
+      "/images/hen-ho/thumbs/22.jpg",
+      "/images/hen-ho/thumbs/23.jpg",
+      "/images/hen-ho/thumbs/24.jpg"
     ]
   },
   {
@@ -88,7 +166,18 @@
       "/images/hue-hoi-an/05.jpg",
       "/images/hue-hoi-an/06.jpg",
       "/images/hue-hoi-an/07.jpg",
-      "/images/hue-hoi-an/08.jpg"
+      "/images/hue-hoi-an/08.jpg",
+      "/images/hue-hoi-an/09.jpg",
+      "/images/hue-hoi-an/10.jpg",
+      "/images/hue-hoi-an/11.jpg",
+      "/images/hue-hoi-an/12.jpg",
+      "/images/hue-hoi-an/13.jpg",
+      "/images/hue-hoi-an/14.jpg",
+      "/images/hue-hoi-an/15.jpg",
+      "/images/hue-hoi-an/16.jpg",
+      "/images/hue-hoi-an/17.jpg",
+      "/images/hue-hoi-an/18.jpg",
+      "/images/hue-hoi-an/19.jpg"
     ],
     "dims": [
       [
@@ -98,6 +187,50 @@
       [
         2000,
         1500
+      ],
+      [
+        1500,
+        2000
+      ],
+      [
+        1500,
+        2000
+      ],
+      [
+        1500,
+        2000
+      ],
+      [
+        1500,
+        2000
+      ],
+      [
+        1500,
+        2000
+      ],
+      [
+        1500,
+        2000
+      ],
+      [
+        2000,
+        1500
+      ],
+      [
+        2000,
+        1500
+      ],
+      [
+        1500,
+        2000
+      ],
+      [
+        1500,
+        2000
+      ],
+      [
+        1500,
+        2000
       ],
       [
         1500,
@@ -132,7 +265,18 @@
       "/images/hue-hoi-an/thumbs/05.jpg",
       "/images/hue-hoi-an/thumbs/06.jpg",
       "/images/hue-hoi-an/thumbs/07.jpg",
-      "/images/hue-hoi-an/thumbs/08.jpg"
+      "/images/hue-hoi-an/thumbs/08.jpg",
+      "/images/hue-hoi-an/thumbs/09.jpg",
+      "/images/hue-hoi-an/thumbs/10.jpg",
+      "/images/hue-hoi-an/thumbs/11.jpg",
+      "/images/hue-hoi-an/thumbs/12.jpg",
+      "/images/hue-hoi-an/thumbs/13.jpg",
+      "/images/hue-hoi-an/thumbs/14.jpg",
+      "/images/hue-hoi-an/thumbs/15.jpg",
+      "/images/hue-hoi-an/thumbs/16.jpg",
+      "/images/hue-hoi-an/thumbs/17.jpg",
+      "/images/hue-hoi-an/thumbs/18.jpg",
+      "/images/hue-hoi-an/thumbs/19.jpg"
     ]
   },
   {
@@ -147,12 +291,87 @@
       "/images/ninh-binh/05.jpg",
       "/images/ninh-binh/06.jpg",
       "/images/ninh-binh/07.jpg",
-      "/images/ninh-binh/08.jpg"
+      "/images/ninh-binh/08.jpg",
+      "/images/ninh-binh/09.jpg",
+      "/images/ninh-binh/10.jpg",
+      "/images/ninh-binh/11.jpg",
+      "/images/ninh-binh/12.jpg",
+      "/images/ninh-binh/13.jpg",
+      "/images/ninh-binh/14.jpg",
+      "/images/ninh-binh/15.jpg",
+      "/images/ninh-binh/16.jpg",
+      "/images/ninh-binh/17.jpg",
+      "/images/ninh-binh/18.jpg",
+      "/images/ninh-binh/19.jpg",
+      "/images/ninh-binh/20.jpg",
+      "/images/ninh-binh/21.jpg",
+      "/images/ninh-binh/22.jpg",
+      "/images/ninh-binh/23.jpg"
     ],
     "dims": [
       [
         1500,
         2000
+      ],
+      [
+        1500,
+        2000
+      ],
+      [
+        1500,
+        2000
+      ],
+      [
+        1500,
+        2000
+      ],
+      [
+        1500,
+        2000
+      ],
+      [
+        1500,
+        2000
+      ],
+      [
+        1500,
+        2000
+      ],
+      [
+        1500,
+        2000
+      ],
+      [
+        1500,
+        2000
+      ],
+      [
+        1500,
+        2000
+      ],
+      [
+        1500,
+        2000
+      ],
+      [
+        1500,
+        2000
+      ],
+      [
+        1500,
+        2000
+      ],
+      [
+        1500,
+        2000
+      ],
+      [
+        2000,
+        1500
+      ],
+      [
+        2000,
+        1500
       ],
       [
         1500,
@@ -191,7 +410,22 @@
       "/images/ninh-binh/thumbs/05.jpg",
       "/images/ninh-binh/thumbs/06.jpg",
       "/images/ninh-binh/thumbs/07.jpg",
-      "/images/ninh-binh/thumbs/08.jpg"
+      "/images/ninh-binh/thumbs/08.jpg",
+      "/images/ninh-binh/thumbs/09.jpg",
+      "/images/ninh-binh/thumbs/10.jpg",
+      "/images/ninh-binh/thumbs/11.jpg",
+      "/images/ninh-binh/thumbs/12.jpg",
+      "/images/ninh-binh/thumbs/13.jpg",
+      "/images/ninh-binh/thumbs/14.jpg",
+      "/images/ninh-binh/thumbs/15.jpg",
+      "/images/ninh-binh/thumbs/16.jpg",
+      "/images/ninh-binh/thumbs/17.jpg",
+      "/images/ninh-binh/thumbs/18.jpg",
+      "/images/ninh-binh/thumbs/19.jpg",
+      "/images/ninh-binh/thumbs/20.jpg",
+      "/images/ninh-binh/thumbs/21.jpg",
+      "/images/ninh-binh/thumbs/22.jpg",
+      "/images/ninh-binh/thumbs/23.jpg"
     ]
   },
   {
@@ -342,7 +576,7 @@
       "/images/anh-cuoi/04.jpg",
       "/images/anh-cuoi/05.jpg",
       "/images/anh-cuoi/06.jpg",
-      "/images/anh-cuoi/511766303_23887892464229912_6319660777068167564_n.jpg"
+      "/images/anh-cuoi/07.jpg"
     ],
     "dims": [
       [
@@ -381,7 +615,7 @@
       "/images/anh-cuoi/thumbs/04.jpg",
       "/images/anh-cuoi/thumbs/05.jpg",
       "/images/anh-cuoi/thumbs/06.jpg",
-      null
+      "/images/anh-cuoi/thumbs/07.jpg"
     ]
   }
 ]

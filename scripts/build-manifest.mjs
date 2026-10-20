@@ -106,12 +106,22 @@ const indexPath = join(PUBLIC, 'index.html');
 if (existsSync(indexPath)) {
   const html = await readFile(indexPath, 'utf8');
   const links = [];
-  if (existsSync(join(PUBLIC, 'video', 'wedding-poster.jpg'))) links.push('<link rel="preload" as="image" href="/video/wedding-poster.jpg" fetchpriority="high">');
+  const htmlTransforms = [];
+  // ảnh nền Hero đầu tiên: preload bản thumbnail (hiện nhanh), ảnh nét được JS nạp sau
+  const firstSlide = (CONFIG.heroSlides || [])[0];
+  if (firstSlide) {
+    const low = firstSlide.replace(/\/([^/]+)\.[^.]+$/, '/thumbs/$1.jpg');
+    const href = existsSync(join(PUBLIC, decodeURIComponent(low))) ? low : firstSlide;
+    links.push(`<link rel="preload" as="image" href="${href}" fetchpriority="high">`);
+    const out = html => html.replace(/(<div class="slide on"><img src=")[^"]*(")/, `$1${href}$2`);
+    htmlTransforms.push(out);
+  }
   for (const c of manifest) {
     const cover = c.thumbs[0] || c.images[0];
     if (cover) links.push(`<link rel="preload" as="image" href="${cover}" fetchpriority="low">`);
   }
-  const out = html.replace(/(<!-- preload:start -->)[\s\S]*?(<!-- preload:end -->)/, `$1\n${links.map((l) => '  ' + l).join('\n')}\n  $2`);
+  let out = html.replace(/(<!-- preload:start -->)[\s\S]*?(<!-- preload:end -->)/, `$1\n${links.map((l) => '  ' + l).join('\n')}\n  $2`);
+  for (const t of htmlTransforms) out = t(out);
   if (out !== html) await writeFile(indexPath, out);
 }
 
